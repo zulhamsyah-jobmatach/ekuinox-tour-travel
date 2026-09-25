@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bricolage Grotesque", ui-sans-serif, sans-serif;
+  --font-body: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Palet malam Kuala Lumpur */
+  --color-midnight: #0c1a23;   /* langit tengah malam */
+  --color-dusk: #122c39;       /* bidang kartu */
+  --color-harbour: #1b4254;    /* garis & aksen dingin */
+  --color-brand: #f0a04b;      /* warna logo Ekuinox */
+  --color-lamp: #e9b44c;       /* lampu natrium jalanan */
+  --color-ember: #c7522a;      /* bara gerai Jalan Alor */
+  --color-mist: #9fb8bd;       /* teks sekunder */
+  --color-paper: #f2ede4;      /* permukaan tiket */
+}
+
+body {
+  background: var(--color-midnight);
+  color: var(--color-paper);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Tepi tiket berlubang — dipakai di halaman paket */
+.perf {
+  position: relative;
+  border-top: 1px dashed rgba(159, 184, 189, 0.35);
+}
+.perf::before,
+.perf::after {
+  content: "";
+  position: absolute;
+  top: -11px;
+  width: 22px;
+  height: 22px;
+  border-radius: 9999px;
+  background: var(--color-midnight);
+}
+.perf::before { left: -11px; }
+.perf::after { right: -11px; }
+
+/* Motif ubin Peranakan — hanya dipakai pada livery bus */
+.livery {
+  height: 6px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--color-brand) 0 14px,
+    var(--color-ember) 14px 22px,
+    var(--color-harbour) 22px 36px,
+    var(--color-ember) 36px 44px
+  );
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-lamp);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

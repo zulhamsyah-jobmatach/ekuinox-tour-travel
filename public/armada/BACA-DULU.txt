@@ -1,0 +1,12 @@
+CARA MENGGANTI ILUSTRASI DENGAN FOTO ASLI ARMADA
+=================================================
+
+1. Minta foto resmi armada langsung dari pihak Kiffah
+   (jangan ambil dari website/medsos mereka tanpa izin).
+2. Simpan foto di folder ini dengan nama persis seperti berikut:
+   - bus-44.jpg   (bus pariwisata)
+   - van.jpg      (van)
+   - mpv.jpg      (MPV / SUV)
+3. Refresh website. Foto otomatis menggantikan ilustrasi.
+
+Disarankan foto landscape (lebar), minimal 1200px.

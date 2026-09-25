@@ -1,0 +1,23 @@
+DAFTAR GAMBAR WEBSITE EKUINOX
+==============================
+
+bus-kiffah.jpg     Bus Kiffah  -> beranda, halaman Armada, halaman Tentang Kami
+van.jpg            Toyota Hiace -> halaman Armada
+mpv.jpg            Toyota Alphard -> halaman Armada
+hop-on-hop-off.jpg Bus wisata KL -> rencana harian Hari 1
+klia.jpg           Bandara KLIA -> Hari 4 & halaman Tentang Kami
+melaka.jpg         Melaka -> hero Tentang Kami, kartu kota, Hari 3
+genting.jpg        Genting -> kartu kota, Hari 2
+kuala-lumpur.jpg   -> kartu kota Kuala Lumpur
+hero-fallback.jpg  Foto besar halaman depan (sementara)
+haniffa.jpg        Belum dipakai
+
+CARA MENGGANTI GAMBAR
+---------------------
+Timpa file lama dengan foto baru, pakai NAMA DAN EKSTENSI YANG SAMA.
+Lalu refresh browser dengan Ctrl+Shift+R.
+
+FOTO HALAMAN DEPAN (KLCC)
+-------------------------
+Simpan foto lanskap KLCC di folder ini dengan nama:  hero-klcc.jpg
+Website otomatis memakainya menggantikan hero-fallback.jpg.
