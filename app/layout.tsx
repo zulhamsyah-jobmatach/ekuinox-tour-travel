@@ -3,7 +3,7 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import Logo from "@/components/Logo";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
-import { SITE } from "@/lib/site";
+import { SITE, waLink } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Ekuinox Tour & Travel — Paket Tour 4 Hari 3 Malam Kuala Lumpur",
@@ -57,7 +57,14 @@ export default function RootLayout({
                 Kontak
               </p>
               <p className="mt-3 font-mono text-[11px] text-mist">
-                WhatsApp: [nomor kamu]
+                <a
+                  href={waLink()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-brand"
+                >
+                  WhatsApp: +{SITE.whatsapp}
+                </a>
               </p>
               <p className="mt-1 font-mono text-[11px] text-mist">
                 {SITE.email}
