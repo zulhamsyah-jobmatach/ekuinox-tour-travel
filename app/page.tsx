@@ -207,7 +207,7 @@ export default async function HomePage() {
             </a>
           </div>
           <p className="mt-5 font-mono text-[10px] uppercase tracking-[0.14em] text-midnight/45">
-            Isi nomor WhatsApp kamu di lib/site.ts
+            Atau kirim langsung ke {SITE.email}
           </p>
         </div>
       </section>

@@ -76,13 +76,6 @@ export default async function CityPage({
               <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-mist">
                 {spot.description}
               </p>
-              <p className="mt-4 max-w-2xl border-l-2 border-lamp pl-4 text-[13px] leading-relaxed text-mist/85">
-                <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-lamp">
-                  Tips
-                </span>
-                <br />
-                {spot.tip}
-              </p>
             </div>
           </article>
         ))}
